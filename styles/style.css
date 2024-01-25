@@ -1,0 +1,226 @@
+/* import font */
+
+@font-face {
+    font-family: vazirNormal;
+    src: url('../fonts/vaizr.eot');
+    src: url('../fonts/vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vazirBold;
+    src: url('../fonts/vazir-bold.eot');
+    src: url('../fonts/vazir-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir-bold.woff2') format('woff2'), url('../fonts/vazir-bold.woff') format('woff'), url('../fonts/vazir-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* root */
+
+:root {
+
+    --normal-font: vazirNormal;
+    --bold-font: vazirBold;
+    --transitions: 0.3s
+}
+
+body {
+    direction: rtl;
+    background-color: #f3f4f6 !important;
+    color: rgb(0, 0, 0) !important;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 19px;
+    color: #454d75;
+}
+
+button {
+    background-color: #2e365d;
+    color: aliceblue;
+    padding: 15px 50px 15px 40px;
+    border-radius: 20px !important;
+    border: none;
+    transition: var(--transitions);
+}
+
+button svg {
+    margin-right: 5px;
+    color: transparent;
+    transition: var(--transitions);
+}
+
+button:hover svg {
+    color: white;
+    margin-right: 10px;
+}
+
+button:hover {
+    padding: 15px 50px 15px 50px;
+}
+
+.my-6 {
+    margin: 80px 0;
+}
+
+
+
+/* header */
+
+#header {
+    font-family: var(--normal-font);
+}
+
+#header img {
+    width: 100%;
+}
+
+#header h1 {
+    font-size: 58px;
+    line-height: 70px;
+    color: #2e365d;
+    font-family: var(--bold-font);
+}
+
+#header span {
+    color: #359dff;
+}
+
+
+/* Specialties */
+
+#specialties {
+    position: relative;
+}
+
+#specialties .swiper-slide {
+    display: flex;
+    justify-content: center;
+    margin: 0 !important;
+}
+
+#specialties .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+}
+
+
+#specialties .specialtie {
+    width: 110px;
+    height: 110px;
+    padding: 22px;
+    background-color: #2e365d27;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#specialties .specialtie img {
+    height: 100%;
+}
+
+#specialties .hide {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+}
+
+#specialties .hide-one {
+    background: linear-gradient(90deg, #00000000 0%, #f3f4f6 100%);
+    right: 0;
+    top: 0;
+}
+
+#specialties .hide-two {
+    background: linear-gradient(-90deg, #00000000 0%, #f3f4f6 100%);
+    left: 0;
+    top: 0;
+}
+
+/* guid */
+
+#guid {
+    font-family: var(--normal-font);
+}
+
+#guid .guid-div {
+    background-color: #2e365d1c;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+
+}
+
+#guid span {
+    color: #359dff;
+}
+
+#guid h1 {
+    font-size: 50px;
+    color: #2e365d;
+    font-family: var(--bold-font);
+}
+
+#guid h3 {
+    font-size: 30px;
+    color: #2e365d;
+    font-family: var(--bold-font);
+}
+
+#guid p {
+
+    text-align: justify;
+}
+
+#guid img {
+    width: 100%;
+}
+
+
+/* Portfolio */
+
+
+#portfolio {
+    font-family: var(--normal-font);
+}
+
+#portfolio .portfolio-card {
+    width: 30%;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+#portfolio .portfolio-card .div-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+#portfolio .portfolio-card .div-image img {
+    width: 100%;
+}
+
+#portfolio .portfolio-card .status svg {
+    font-size: 10px;
+}
+
+#portfolio .portfolio-card svg.completed{
+    color: green;
+}
+
+#portfolio .portfolio-card svg.imperfect{
+    color: red;
+}
+
+#portfolio .portfolio-card button{
+    width: 100%;
+}
+
+#portfolio .portfolio-card button svg{
+    font-size: 20px;
+}

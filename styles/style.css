@@ -65,6 +65,19 @@ button:hover {
     margin: 80px 0;
 }
 
+/* Swiper Pagination */
+
+.swiper-pagination-bullet {
+    background-color: #2e365d6e !important;
+    transition: var(--transitions);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #2e365d !important;
+    padding: 0 15px;
+    border-radius: 20px !important;
+}
+
 
 
 /* header */
@@ -190,9 +203,12 @@ button:hover {
 }
 
 #portfolio .portfolio-card {
-    width: 30%;
+    /* width: 30%; */
     display: inline-block;
     border-radius: 30px;
+    background-color: #2e365d1c;
+    backdrop-filter: blur(5px);
+    transition: var(--transitions);
 }
 
 #portfolio .portfolio-card .div-image {
@@ -203,24 +219,37 @@ button:hover {
 
 #portfolio .portfolio-card .div-image img {
     width: 100%;
+    transition: var(--transitions);
+    filter: grayscale(50%);
 }
 
 #portfolio .portfolio-card .status svg {
     font-size: 10px;
 }
 
-#portfolio .portfolio-card svg.completed{
+#portfolio .portfolio-card svg.completed {
     color: green;
 }
 
-#portfolio .portfolio-card svg.imperfect{
+#portfolio .portfolio-card svg.imperfect {
     color: red;
 }
 
-#portfolio .portfolio-card button{
+#portfolio .portfolio-card button {
     width: 100%;
 }
 
-#portfolio .portfolio-card button svg{
+#portfolio .portfolio-card button svg {
     font-size: 20px;
+}
+
+#portfolio .portfolio-card:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+#portfolio .portfolio-card:hover {
+    box-shadow: 0px 0px 29px -6px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 29px -6px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 29px -6px rgba(0, 0, 0, 0.39);
 }

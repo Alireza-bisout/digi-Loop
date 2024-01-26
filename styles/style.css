@@ -256,15 +256,62 @@ button:hover {
     font-family: var(--normal-font);
 }
 
-#customers-comments .comment {
-    background-color: #dbdbdbfd;
+#customers-comments .customers-comments-div {
+    background-color: #2e365d1c;
     backdrop-filter: blur(5px);
     border-radius: 30px;
-    text-align: justify;
 }
 
 #customers-comments .comment .profile .image img {
     width: 80px;
     border-radius: 50%;
     border: 5px solid rgb(221, 221, 221);
+
+}
+
+#customers-comments .swiper-slide-shadow-flip {
+    border-radius: 30px;
+}
+
+#customers-comments .comment {
+    background-color: #eeeeeefd;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    text-align: justify;
+}
+
+#customers-comments .title h1 {
+    font-size: 50px;
+    color: #2e365d;
+    font-family: var(--bold-font);
+}
+
+#customers-comments .title h3 {
+    font-size: 30px;
+    color: #2e365d;
+    font-family: var(--bold-font);
+}
+
+#customers-comments .title span {
+    color: #359dff;
+}
+
+#customers-comments .title .swiper-navigation svg {
+    font-size: 40px;
+    color: #2e365d;
+    transition: var(--transitions);
+
+}
+
+#customers-comments .title .arrow .cls-1 {
+    fill: #2e365d44;
+
+}
+
+#customers-comments .title .arrow svg {
+    width: 100px;
+}
+
+#customers-comments .title .swiper-button-disabled svg {
+    opacity: .35;
 }

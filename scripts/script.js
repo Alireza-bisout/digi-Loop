@@ -56,6 +56,11 @@ var swiper = new Swiper(".mySwiperTwo", {
 });
 
 var swiper5 = new Swiper(".swiperComment", {
-  effect: "cards",
+  effect: "flip",
   grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-comment-next",
+    prevEl: ".swiper-comment-prev",
+  },
+
 });
